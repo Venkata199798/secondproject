@@ -1,0 +1,343 @@
+
+
+body{
+    margin: 0px;
+    background-image: linear-gradient(to bottom, #2936A2,#2D29A2)
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+.link_1{
+    color: white;
+    font-size: 12px;
+    position: relative;
+    letter-spacing: 2px;
+    font-family: "Azo sans" sans-serif;
+}
+.link_1:hover{
+    color: #79C91B ;
+}
+.link_1::before{
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 20%;
+    right: 0;
+    width: 100%;
+    opacity: 0.2;
+    background-image: linear-gradient(to right,#70c618,#C1FA7F);
+}
+.link_1:hover::before{
+    width: 75%;
+    opacity: 1;
+    height: 2px;
+    transition-duration: .5s;
+}
+.arrowstyle::before{
+    padding: 7px;
+    border-radius: 20px;
+    border-top: 3px solid #70c618;
+    border-right: 3px solid #79C91B;
+    border-bottom: 3px solid #79C91B;
+    color: white;
+    font-size: 15px;
+}
+.photo{
+    animation: animate_1 5s ease-in-out  infinite forwards ;
+}
+@keyframes animate_1 {
+    0%{
+        transform: scale(0.1);
+    }
+    25%{
+        transform: translateX(35px);
+    }
+    50%{
+        transform: translateX(-35px);
+    }
+    75%{
+        transform:rotate(45deg);
+    }
+    100%{
+        transform: scale(0.1);
+    }
+}
+.loginbutton{
+    color: #79C91B;
+    letter-spacing: 2px;
+}
+.loginbutton:hover{
+    text-decoration: none;
+}
+.bottom_container{
+    padding-top: 89px;
+}
+.main-heading{
+    color: white;
+    font-family: "Azosans" sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.paragraph{
+    color: #79C91B;
+    font-size: 24px;
+    font-family: "Azosans" sans-serif;
+}
+.firstcontainer{
+    padding: 30px 0px 20px 37px;
+    border-radius: 30px;
+    background-color: #20267B;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.firstcontainer::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 100%;
+    left: 0;
+    bottom: 0;
+    transition: 1s ease;
+    background-image: url("./images/Panel\ 2.png");
+    background-size: cover;
+}
+.firstcontainer:hover .animate{
+    display: none;
+}
+.firstcontainer:hover::before{
+    top: 0%;
+}
+.firstcontainer:hover .techhead{
+    color: #0063c5;
+}
+.techhead{
+    font-size: 24px;
+    color: #FFFFFF;
+    opacity: 50%;
+    font-family: "Azosans" sans-serif;
+    font-weight: bold;
+}
+.icon-style-head{
+    font-size: 30px;
+}
+.header12{
+    color: #ffffff;
+    font-size: 40px;
+    font-family: "Azosans" sans-serif;
+}
+.morbi_head{
+    color: #fff;
+    font-size: 16px;
+    font-family: "Azosans" sans-serif;
+    font-weight: normal;
+}
+.number1{
+    position: relative;
+    background-color: #79C91B;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    border-radius: 5px;
+}
+.number1::after{
+    content: "01";
+    top: 15%;
+    left: 20%;
+    position: absolute;
+    color: white;
+    transform: rotate(-45deg);
+    font-size: 16px;
+    font-family: "Azosans" sans-serif;
+    font-weight: bold;
+}
+.numberstyle::after{
+    content: "02";
+}
+.number2::after{
+    content: "03";
+}
+.number3::after{
+    content: "04";
+}
+.arrows{
+    color:#ffffff;
+}
+
+
+
+
+.touch_head{
+    font-family: "Azosans" sans-serif;
+    font-weight: bold;
+    position: relative;
+}
+.touch_head::before{
+    background-color: #79C91B;
+    position: absolute;
+    content: "";
+    top: 110%;
+    left: 0;
+    width: 160px;
+    height: 2px;
+}
+.unordered_list{
+    list-style-type: none;
+    padding-left: 0px;
+}
+.unlink{
+    color: white;
+    font-size: 13px;
+    font-family: "Azosans" sans-serif;
+}
+.unlink:hover{
+    color: #79C91B;
+    text-decoration: none;
+}
+.telephone{
+    color: #70c618;
+}
+.telephone:hover{
+    text-decoration: none;
+}
+.call_head{
+    font-size: 13px;
+    color: white;
+}
+.user_input{
+    border-radius: 30px;
+    padding: 13px 0px 9px 18px;
+    border-width: 0px;
+    background-color: rgb(245, 245, 245,0.08);
+    color: white;
+}
+.submit_button{
+    border-radius: 20px;
+    color: white;
+    background-color: #79C91B;
+    font-family: "Azosans" sans-serif;
+    font-weight: medium;
+}
+.copyright{
+    color: white;
+    font-size: 10px;
+    font-family: "Azosans" sans-serif;
+    font-weight: Regular;
+}
+.copyright1{
+    color: white;
+}
+.copyright1:hover{
+    color: white;
+    text-decoration: none;
+}
+.user_input::-webkit-input-placeholder { 
+    color: #FFFFFF;
+}
+
+
+@media (min-width:768px) and (max-width:992px) {
+    .touch_head{
+        font-family: "Azosans" sans-serif;
+        position: relative;
+    }
+    .touch_head::before{
+        background-image: linear-gradient(to right,#70c618,#C1FA7F);
+        position: absolute;
+        content: "";
+        top: 100%;
+        left: 0;
+        width: 100px;
+        height: 2px;
+    }
+    .arrowstyle::before{
+        padding: 5px;
+        border-radius: 20px;
+        border-top: 1px solid #70c618;
+        border-right: 2px solid #79C91B;
+        border-bottom: 1px solid #79C91B;
+        color: white;
+        font-size: 12px;
+    }
+    .link_1{
+        font-size: 10px;
+    }
+    .loginbutton{
+        font-size: 12px;
+        font-family: "Azosans" sans-serif;
+    }
+    .photo{
+        height: 400px;
+        width: 500px;
+    }
+}
+@media screen and (max-width:576px) {
+    .link_1:hover{
+        border-bottom: #79C91B 2px solid;
+    }
+    .work{
+        padding-top: 30px;
+    }
+    .touch_head{
+        margin-top: 25px;
+        text-align: center;
+        border-bottom: #79C91B 2px solid;
+    }
+    .touch_head::before{
+        display: none;
+    }
+   
+}
+@media (min-width:320px) and (max-width:480px){
+    .unordered_list{
+        text-align: center;
+    }
+    .center_align{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .icons{
+     text-align: center;
+    }
+}
+@media (width:768px) {
+    .main-heading{
+        font-size: 34px;
+    }
+    .paragraph{
+        font-size: 20px;
+    }
+}
+@media (min-width:2560px){
+   .main-heading{
+       font-size: 70px;
+   }
+   .paragraph{
+       font-size: 60px;
+   }
+  .morbi_head{
+      font-size: 20px;
+  }
+  .unlink{
+    color: white;
+    font-size: 18px;
+    font-family: "Azosans" sans-serif;
+}
+.icons{
+  padding-left: 0px;
+}
+.call_head{
+    font-size: 18px;
+}
+   
+}
