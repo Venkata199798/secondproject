@@ -21,9 +21,6 @@ footer{
     position: relative;
     letter-spacing: 2px;
     font-family: "Azo sans" sans-serif;
-}
- .link_1:hover{
-    color: #79C91B ;
 } 
 .link_1::before{
     position: absolute;
