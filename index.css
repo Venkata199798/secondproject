@@ -1,10 +1,9 @@
-
-
 body{
     margin: 0px;
+    padding: 0px;
     background-image: linear-gradient(to bottom, #2936A2,#2D29A2)
 }
-main{
+ main{
     overflow: hidden;
 }
 footer{
@@ -13,7 +12,7 @@ footer{
 .header{
     position: sticky;
     top: 0;
-    z-index: 3;
+    z-index: 99999999999;
     overflow: hidden;
 }
 .link_1{
@@ -23,9 +22,9 @@ footer{
     letter-spacing: 2px;
     font-family: "Azo sans" sans-serif;
 }
-.link_1:hover{
+ .link_1:hover{
     color: #79C91B ;
-}
+} 
 .link_1::before{
     position: absolute;
     content: "";
@@ -33,7 +32,7 @@ footer{
     left: 20%;
     right: 0;
     width: 100%;
-    opacity: 0.2;
+    opacity: 0.5;
     background-image: linear-gradient(to right,#70c618,#C1FA7F);
 }
 .link_1:hover::before{
@@ -122,9 +121,9 @@ footer{
 .firstcontainer:hover::before{
     top: 0%;
 }
-.firstcontainer:hover .techhead{
+/* .firstcontainer:hover .techhead{
     color: #0063c5;
-}
+} */
 .techhead{
     font-size: 24px;
     color: #FFFFFF;
@@ -147,6 +146,7 @@ footer{
     font-weight: normal;
 }
 .number1{
+
     position: relative;
     background-color: #79C91B;
     width: 30px;
@@ -154,8 +154,7 @@ footer{
     transform: rotate(45deg);
     border-radius: 5px;
 }
-.number1::after{
-    content: "01";
+ .number1::after{
     top: 15%;
     left: 20%;
     position: absolute;
@@ -164,6 +163,9 @@ footer{
     font-size: 16px;
     font-family: "Azosans" sans-serif;
     font-weight: bold;
+} *
+.firstnumber::after{
+    content: "01";
 }
 .numberstyle::after{
     content: "02";
@@ -221,7 +223,7 @@ footer{
 .user_input{
     border-radius: 30px;
     padding: 13px 0px 9px 18px;
-    border-width: 0px;
+    border: none;
     background-color: rgb(245, 245, 245,0.08);
     color: white;
 }
@@ -235,7 +237,7 @@ footer{
 .copyright{
     color: white;
     font-size: 10px;
-    font-family: "Azosans" sans-serif;
+    font-family: "Azo sans" sans-serif;
     font-weight: Regular;
 }
 .copyright1{
@@ -244,9 +246,6 @@ footer{
 .copyright1:hover{
     color: white;
     text-decoration: none;
-}
-.user_input::-webkit-input-placeholder { 
-    color: #FFFFFF;
 }
 
 
