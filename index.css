@@ -4,11 +4,17 @@ body{
     margin: 0px;
     background-image: linear-gradient(to bottom, #2936A2,#2D29A2)
 }
-
+main{
+    overflow: hidden;
+}
+footer{
+    overflow: hidden;
+}
 .header{
     position: sticky;
     top: 0;
     z-index: 3;
+    overflow: hidden;
 }
 .link_1{
     color: white;
